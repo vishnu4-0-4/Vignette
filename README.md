@@ -1,74 +1,185 @@
-# Vignette
+# 📝 Vignette Blog
 
-A minimal, elegant blogging platform built to make writing and publishing posts simple and enjoyable.
+A modern full-stack blogging platform where users can create, edit, publish, and manage blog posts with a clean and responsive interface.
+
+---
 
 ## ✨ Features
 
-- Clean, distraction-free writing experience
-- Fast page loads
-- Responsive design (mobile & desktop)
-- Organized posts by category/tags
-- (Add/remove features as per your actual project)
+- 🔐 User Authentication (Login & Signup)
+- 📝 Create, Edit, and Delete Blog Posts
+- 📖 Rich Text Editor for writing blogs
+- 🖼️ Upload Featured Images
+- 📱 Responsive UI for Desktop & Mobile
+- 🔎 Browse Published Blogs
+- ⚡ Fast React-based Frontend
+- ☁️ Appwrite Backend Integration
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** _(e.g. React / HTML, CSS, JS)_
-- **Backend:** _(e.g. Node.js, Express)_
-- **Database:** _(e.g. MongoDB / PostgreSQL / SQLite)_
-- **Other tools:** _(e.g. Tailwind CSS, Markdown parser)_
+### Frontend
+- React.js
+- React Router
+- Redux Toolkit
+- React Hook Form
+- TinyMCE Editor
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+### Backend & Services
+- Appwrite
+  - Authentication
+  - Database
+  - Storage
+
+---
 
 ## 📸 Screenshots
 
-_(Add screenshots or a demo GIF of your blog here)_
+> Add screenshots of your application here.
 
-## 🚀 Getting Started
+Example:
 
-### Prerequisites
+- Home Page
+- Login Page
+- Create Post
+- Blog Details
+- Dashboard
 
-- Node.js >= 18
-- npm or yarn
+---
 
-### Installation
+## 🚀 Installation
+
+### Clone the repository
 
 ```bash
-# Clone the repository
-git clone https://github.com/<your-username>/vignette.git
+git clone https://github.com/vishnu4-0-4/Vignette.git
+```
 
-# Move into the project directory
-cd vignette
+### Navigate into the project
 
-# Install dependencies
+```bash
+cd Vignette
+```
+
+### Install dependencies
+
+```bash
 npm install
-
-# Start the development server
-npm start
 ```
 
-The app will be available at `http://localhost:3000` (adjust if different).
+### Create Environment Variables
 
-## 📁 Project Structure
+Create a `.env` file in the project root and add:
+
+```env
+VITE_APPWRITE_URL=your_endpoint
+VITE_APPWRITE_PROJECT_ID=your_project_id
+VITE_APPWRITE_DATABASE_ID=your_database_id
+VITE_APPWRITE_COLLECTION_ID=your_collection_id
+VITE_APPWRITE_BUCKET_ID=your_bucket_id
+```
+
+> ⚠️ Never commit your `.env` file to GitHub.
+
+### Start Development Server
+
+```bash
+npm run dev
+```
+
+Open:
 
 ```
-vignette/
+http://localhost:5173
+```
+
+---
+
+## 📂 Folder Structure
+
+```
+Vignette/
+│
+├── public/
 ├── src/
+│   ├── appwrite/
 │   ├── components/
 │   ├── pages/
-│   └── styles/
-├── public/
+│   ├── store/
+│   ├── conf/
+│   ├── hooks/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── .env
 ├── package.json
 └── README.md
 ```
 
+---
+
+## 📖 Usage
+
+1. Create an account or log in.
+2. Create a new blog post.
+3. Upload a featured image.
+4. Publish your blog.
+5. Edit or delete your posts anytime.
+
+---
+
+## 🌟 Future Enhancements
+
+- ❤️ Like & Bookmark Blogs
+- 💬 Comments System
+- 🔍 Search & Filters
+- 📊 User Dashboard
+- 🌙 Dark Mode
+- 📧 Email Notifications
+
+---
+
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/<your-username>/vignette/issues).
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Added new feature"
+```
+
+4. Push your branch
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
+---
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
-## 👤 Author
+---
 
-**Your Name**
-- GitHub: [@your-username](https://github.com/<your-username>)
+## 👨‍💻 Author
+
+**Kurra Vishnu**
+
+GitHub: https://github.com/vishnu4-0-4
+
+---
